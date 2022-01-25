@@ -66,11 +66,7 @@ header h1{
 header h1 span{
     font-size: 3.5rem;
 }
-
-
 /* main */
-
-
 main{
     display: grid;
     grid-template-areas: "h1 h1 h1 h1"
@@ -108,28 +104,6 @@ main figure{
 .a6{
     grid-area: a6;
 }
-
-/* aside */
-/* aside{
-    display: grid;
-grid-template-areas: "h3"
-"s1"
-"s2"
-"s3";
-gap: 5px;
-}
-h3{
-    grid-area: h3;
-}
-.s1{
-    grid-area: s1;
-}
-.s2{
-    grid-area: s2;
-}
-.s3{
-    grid-area: s3;
-} */
 .aside{
     text-align: center;
 }
@@ -137,16 +111,6 @@ h3{
     border: 10px double #333;
     padding: 5%;
     margin: 10px;
-    /* width: 100%; */
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
-}
-.s1{
-    
 }
 aside h1{
     font-size: 3rem;
