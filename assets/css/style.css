@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
-/* Farben: rgb(233, 233, 224), #333 */
+@font-face {
+    font-family: 'Cormorant Garamont, bold';
+    src: url(../font/CormorantGaramond-Bold.ttf);
+} 
+@font-face {
+    font-family: 'Cormorant Garamont, italic';
+    src: url(../font/CormorantGaramond-MediumItalic.ttf);
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Cormorant Garamond', serif;
-    color: #333;
-    background-color: rgb(233, 233, 224);
+}
+h1, h2, h3{
+    font-family: 'Cormorant Garamont, bold';
+}
+figcaption{
+    font-family: 'Cormorant Garamont, italic';
 }
 body{
     display: grid;
@@ -18,10 +29,13 @@ body{
     "main main main main aside";
     height: 100vh;
     gap: 20px;
-    padding: 2% 5%;
+    padding: 0 5%;
+    color: #333;
+    background-color: rgb(233, 233, 224);
 }
 .header{
     grid-area: header;
+    text-align: center;
 }
 .main{
     grid-area: main;
@@ -33,21 +47,24 @@ img{
     width: 100%;
 }
 /* header */
-.header{
-    text-align: center;
-}
 nav{
     border-top: 7px double #333;
     border-bottom: 7px double #333;
 }
 nav ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     list-style: none;
+    font-size: 1.2rem;
+    padding: 5px;
 }
 header h1{
-    font-weight: 900;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+header h1 span{
+    font-size: 3.5rem;
 }
 
 
@@ -60,10 +77,12 @@ main{
     "a1 a2 img img"
     "a3 a4 img img"
     "a5 a6 img img";
-    gap: 5px;
+    gap: 10px;
 }
 main h1{
     grid-area: h1;
+    font-size: 2.8rem;
+    text-align: center;
 }
 main article{
     grid-area: article;
@@ -91,7 +110,7 @@ main figure{
 }
 
 /* aside */
-aside{
+/* aside{
     display: grid;
 grid-template-areas: "h3"
 "s1"
@@ -110,15 +129,29 @@ h3{
 }
 .s3{
     grid-area: s3;
+} */
+.aside{
+    text-align: center;
 }
 .aside section{
     border: 10px double #333;
-    display: flex;
+    padding: 5%;
+    margin: 10px;
+    /* width: 100%; */
+    /* display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; */
+}
+.s1{
+    
+}
+aside h1{
+    font-size: 3rem;
 }
 .s3 img{
     width: 80%;
+    filter: grayscale(100%);
 }
