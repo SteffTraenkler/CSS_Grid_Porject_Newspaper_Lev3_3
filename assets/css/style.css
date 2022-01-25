@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+/* Farben: rgb(233, 233, 224), #333 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    color: #333;
+    background-color: rgb(233, 233, 224);
+}
+body{
+    display: grid;
+    grid-template-areas: "header header header header header"
+    "main main main main aside"
+    "main main main main aside"
+    "main main main main aside"
+    "main main main main aside";
+    height: 100vh;
+    gap: 20px;
+    padding: 2% 5%;
+}
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.aside{
+    grid-area: aside;
+}
+img{
+    width: 100%;
+}
+/* header */
+.header{
+    text-align: center;
+}
+nav{
+    border-top: 7px double #333;
+    border-bottom: 7px double #333;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+}
+header h1{
+    font-weight: 900;
+}
+
+
+/* main */
+
+
+main{
+    display: grid;
+    grid-template-areas: "h1 h1 h1 h1"
+    "a1 a2 img img"
+    "a3 a4 img img"
+    "a5 a6 img img";
+    gap: 5px;
+}
+main h1{
+    grid-area: h1;
+}
+main article{
+    grid-area: article;
+}
+main figure{
+    grid-area: img;
+}
+.a1{
+    grid-area: a1;
+}
+.a2{
+    grid-area: a2;
+}
+.a3{
+    grid-area: a3;
+}
+.a4{
+    grid-area: a4;
+}
+.a5{
+    grid-area: a5;
+}
+.a6{
+    grid-area: a6;
+}
+
+/* aside */
+aside{
+    display: grid;
+grid-template-areas: "h3"
+"s1"
+"s2"
+"s3";
+gap: 5px;
+}
+h3{
+    grid-area: h3;
+}
+.s1{
+    grid-area: s1;
+}
+.s2{
+    grid-area: s2;
+}
+.s3{
+    grid-area: s3;
+}
+.aside section{
+    border: 10px double #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.s3 img{
+    width: 80%;
+}
